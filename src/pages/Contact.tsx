@@ -14,15 +14,33 @@ const Contact = () => {
               <div className="space-y-4">
                 <div>
                   <h3 className="font-semibold mb-2">Adresse</h3>
-                  <p className="text-gray-600">123 Avenue de la République<br />Tunis, Tunisie</p>
+                  <a 
+                    href="https://maps.app.goo.gl/4stENezyU5nv82L49" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-amber-600 transition-colors"
+                  >
+                    Bureau n°6, Centre Farah,<br />
+                    Nouvelle Ariana, Ariana, Tunisia
+                  </a>
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2">Téléphone</h3>
-                  <p className="text-gray-600">+216 71 234 567</p>
+                  <a 
+                    href="tel:+21697800000" 
+                    className="text-gray-600 hover:text-amber-600 transition-colors"
+                  >
+                    +216 97 800 000
+                  </a>
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2">Email</h3>
-                  <p className="text-gray-600">contact@tunisia-square.com</p>
+                  <a 
+                    href="mailto:Ahmedharoun44@gmail.com" 
+                    className="text-gray-600 hover:text-amber-600 transition-colors"
+                  >
+                    Ahmedharoun44@gmail.com
+                  </a>
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2">Heures d'ouverture</h3>
