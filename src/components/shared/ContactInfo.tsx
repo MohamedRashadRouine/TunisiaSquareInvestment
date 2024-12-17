@@ -28,12 +28,6 @@ const ContactInfo = () => {
           >
             +216 97 800 000
           </a>
-          <a 
-            href="tel:+21697100001" 
-            className="text-gray-600 hover:text-amber-600 transition-colors block"
-          >
-            +216 97 100 001
-          </a>
         </div>
       </div>
       
