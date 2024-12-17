@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -21,18 +22,18 @@ const Hero = () => {
             Votre partenaire pour des investissements immobiliers réussis
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="/properties"
+            <Link
+              to="/properties"
               className="bg-amber-600 text-white px-8 py-3 rounded-lg hover:bg-amber-700 transition-colors"
             >
               Découvrir nos propriétés
-            </a>
-            <a
-              href="/contact"
+            </Link>
+            <Link
+              to="/contact"
               className="bg-white text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
             >
               Nous contacter
-            </a>
+            </Link>
           </div>
         </div>
       </div>
