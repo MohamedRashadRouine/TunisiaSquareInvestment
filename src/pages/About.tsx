@@ -26,12 +26,12 @@ const About = () => {
     {
       icon: '💡',
       title: 'Notre Expertise',
-      description: 'Avec une profonde connaissance du marché immobilier tunisien, nous sommes en mesure d\'offrir des conseils avisés et un accompagnement personnalisé pour tous vos projets d\'investissement. Nous sommes là pour vous aider à naviguer dans le monde complexe de l\'immobilier.'
+      description: 'Nous sommes là pour vous aider à naviguer dans le monde complexe de l\'immobilier.'
     },
     {
       icon: '🤝',
       title: 'Notre Engagement',
-      description: 'Nous nous engageons à maintenir les plus hauts standards de qualité et d\'éthique dans toutes nos activités. La satisfaction de nos clients est notre priorité absolue, et nous travaillons sans relâche pour atteindre cet objectif.'
+      description: 'Nous nous engageons à maintenir les plus hauts standards de qualité et d\'éthique dans toutes nos activités. La satisfaction de nos clients est notre priorité absolue.'
     }
   ];
 
@@ -47,9 +47,12 @@ const About = () => {
             >
               <div className="text-4xl mb-4">{section.icon}</div>
               <h3 className="text-xl font-semibold mb-3">{section.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{section.description}</p>
+              <p className="text-gray-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: section.description }}></p>
             </div>
           ))}
+        </div>
+        <div className="text-center mt-8">
+          <a href="tel:+21697800000" className="text-blue-400 text-lg">+216 97 800 000</a>
         </div>
       </div>
     </div>
