@@ -5,18 +5,26 @@ import Navigation from './Navigation';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     setIsMenuOpen(false);
   }, [location]);
 
+  const toggleDarkMode = () => {
+    setIsDarkMode(prevMode => !prevMode);
+    document.body.classList.toggle('dark', !isDarkMode);
+  };
+
   return (
     <header className="fixed w-full bg-white shadow-md z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Logo />
-          
+          <button onClick={toggleDarkMode} className="p-2 rounded-md hover:bg-gray-100 focus:outline-none">
+            {isDarkMode ? '🌙' : '☀️'}
+          </button>
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
