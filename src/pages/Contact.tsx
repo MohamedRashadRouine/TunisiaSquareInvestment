@@ -54,9 +54,10 @@ const Contact = () => {
 
             {/* Google Map */}
             <div className="map-container">
+              <h2 className="text-2xl font-bold mb-6">Localisation de notre bureau</h2>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345092764!2d144.9537353153168!3d-37.8162799797518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11f0c1%3A0x5045675218ceed30!2sYour%20Office%20Name!5e0!3m2!1sen!2sus!4v1614697287215!5m2!1sen!2sus"
-                width="600"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13488.37132905412!2d10.1844315!3d36.8524439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzZCsDQ3JzQ0LjAiTiAxMDDCsDIwJzEwLjAiVw!5e0!3m2!1sen!2sus!4v1614697287215!5m2!1sen!2sus"
+                width="100%"
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen=""
