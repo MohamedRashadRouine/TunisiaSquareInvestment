@@ -47,12 +47,9 @@ const About = () => {
             >
               <div className="text-4xl mb-4">{section.icon}</div>
               <h3 className="text-xl font-semibold mb-3">{section.title}</h3>
-              <p className="text-gray-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: section.description }}></p>
+              <p className="text-gray-600 leading-relaxed">{section.description}</p>
             </div>
           ))}
-        </div>
-        <div className="text-center mt-8">
-          <a href="tel:+21697800000" className="text-blue-400 text-lg">+216 97 800 000</a>
         </div>
       </div>
     </div>
