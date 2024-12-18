@@ -79,23 +79,23 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* Social Media */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
-            <p className="mb-4">Restez informé de nos dernières actualités</p>
-            <form className="space-y-2">
-              <input
-                type="email"
-                placeholder="Votre email"
-                className="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-amber-400"
-              />
-              <button
-                type="submit"
-                className="w-full bg-amber-600 text-white py-2 px-4 rounded hover:bg-amber-700 transition-colors"
-              >
-                S'abonner
-              </button>
-            </form>
+            <h3 className="text-xl font-semibold mb-4">Réseaux Sociaux</h3>
+            <div className="space-y-2">
+              <div className="flex items-center">
+                <span className="text-xl mr-2">📱</span>
+                <a href="https://www.facebook.com/TunisiaSquareInvestment" className="hover:text-amber-400 transition-colors" target="_blank" rel="noopener noreferrer">Facebook</a>
+              </div>
+              <div className="flex items-center">
+                <span className="text-xl mr-2">📸</span>
+                <a href="https://www.instagram.com/cm.square" className="hover:text-amber-400 transition-colors" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </div>
+              <div className="flex items-center">
+                <span className="text-xl mr-2">💬</span>
+                <span>WhatsApp: +216 97 800 000</span>
+              </div>
+            </div>
           </div>
         </div>
 
