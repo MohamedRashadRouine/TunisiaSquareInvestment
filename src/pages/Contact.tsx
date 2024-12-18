@@ -56,12 +56,13 @@ const Contact = () => {
             <div className="map-container">
               <h2 className="text-2xl font-bold mb-6">Localisation de notre bureau</h2>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13488.37132905412!2d10.1844315!3d36.8524439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd35afbbc1873d%3A0x2060f1ae2449e984!8m2!3d36.8524356!4d10.1844109"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d586.474241972058!2d10.183931267673723!3d36.852168842597045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd35afbbc1873d%3A0x2060f1ae2449e984!2sTunisia%20square%20investment!5e1!3m2!1sen!2stn!4v1734555960345!5m2!1sen!2stn"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
