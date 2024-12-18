@@ -9,6 +9,13 @@ const App = () => {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Header />
+        <header className="hero-section">
+          <div className="hero-content">
+            <h1>Welcome to Our Property Listings</h1>
+            <p>Find your dream property today!</p>
+            <button className="cta-button">Explore Properties</button>
+          </div>
+        </header>
         <main className="flex-grow">
           <AppRoutes />
         </main>
