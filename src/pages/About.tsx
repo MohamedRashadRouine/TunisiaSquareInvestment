@@ -6,27 +6,27 @@ const About = () => {
     {
       icon: '📖',
       title: 'Notre Histoire',
-      description: 'Tunisia Square Investment est née de la vision d\'offrir des services d\'investissement immobilier de premier ordre en Tunisie. Depuis notre création, nous nous sommes engagés à fournir des solutions personnalisées à nos clients, qu\'ils soient des investisseurs locaux ou internationaux.'
+      description: 'Tunisia Square Investment est née de la vision d\'offrir des services d\'investissement immobilier de premier ordre en Tunisie. Depuis notre création, nous nous sommes engagés à fournir des solutions personnalisées à nos clients.'
     },
     {
       icon: '🎯',
       title: 'Notre Mission',
-      description: 'Faciliter vos investissements immobiliers en toute sécurité'
+      description: 'Faciliter vos investissements immobiliers en toute sécurité, en vous fournissant des conseils avisés et un accompagnement personnalisé pour tous vos projets d\'investissement. Nous nous efforçons de comprendre vos besoins et vos objectifs pour vous offrir des solutions sur mesure.'
     },
     {
       icon: '👥',
       title: 'Notre Équipe',
-      description: 'Une équipe de professionnels dévoués à votre service'
+      description: 'Une équipe de professionnels dévoués à votre service, avec une profonde connaissance du marché immobilier tunisien et une équipe d\'experts qualifiés. Nous sommes passionnés par ce que nous faisons et nous nous engageons à vous fournir le meilleur service possible.'
     },
     {
       icon: '🏆',
       title: 'Notre Excellence',
-      description: 'Un service premium et des résultats garantis'
+      description: 'Un service premium et des résultats garantis, grâce à notre engagement à maintenir les plus hauts standards de qualité et d\'éthique dans toutes nos activités. Nous nous efforçons d\'être les meilleurs dans notre domaine et de vous offrir une expérience d\'investissement exceptionnelle.'
     },
     {
       icon: '💡',
       title: 'Notre Expertise',
-      description: 'Avec une profonde connaissance du marché immobilier tunisien et une équipe d\'experts qualifiés, nous sommes en mesure d\'offrir des conseils avisés et un accompagnement personnalisé pour tous vos projets d\'investissement.'
+      description: 'Avec une profonde connaissance du marché immobilier tunisien, nous sommes en mesure d\'offrir des conseils avisés et un accompagnement personnalisé pour tous vos projets d\'investissement. Nous sommes là pour vous aider à naviguer dans le monde complexe de l\'immobilier.'
     },
     {
       icon: '🤝',
