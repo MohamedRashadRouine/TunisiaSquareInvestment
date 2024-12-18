@@ -29,7 +29,7 @@ const Chatbot = () => {
 
   return (
     <div className={`chatbot ${isOpen ? 'open' : ''}`}>  
-      <button onClick={toggleChat}>Chat</button>
+      <button onClick={toggleChat}>💬</button>
       {isOpen && (
         <div className="chat-window">
           {messages.map((msg, index) => (

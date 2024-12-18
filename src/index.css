@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatbot button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+}
+
+.chat-window {
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  padding: 10px;
+}
+
+.chatbot.open .chat-window {
+  display: flex; /* Show chat window when open */
+}
