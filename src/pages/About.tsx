@@ -11,17 +11,17 @@ const About = () => {
     {
       icon: '🎯',
       title: 'Notre Mission',
-      description: 'Faciliter vos investissements immobiliers en toute sécurité'
+      description: 'Faciliter vos investissements immobiliers en toute sécurité. Nous offrons des conseils personnalisés et un accompagnement à chaque étape de votre projet.'
     },
     {
       icon: '👥',
       title: 'Notre Équipe',
-      description: 'Une équipe de professionnels dévoués à votre service'
+      description: 'Une équipe de professionnels dévoués à votre service. Chaque membre de notre équipe est formé pour répondre à vos besoins et vous offrir le meilleur service possible.'
     },
     {
       icon: '🏆',
       title: 'Notre Excellence',
-      description: 'Un service premium et des résultats garantis'
+      description: 'Nous nous efforçons d’atteindre l’excellence dans tout ce que nous faisons. Nos clients peuvent s’attendre à un service premium et à des résultats garantis.'
     },
     {
       icon: '💡',
