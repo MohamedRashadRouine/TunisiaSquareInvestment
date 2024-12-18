@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import AppRoutes from './AppRoutes';
+import Chatbot from './components/Chatbot';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <main className="flex-grow">
           <AppRoutes />
         </main>
+        <Chatbot />
         <Footer />
       </div>
     </Router>
