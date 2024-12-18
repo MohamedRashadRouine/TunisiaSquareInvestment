@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Importing a luxurious font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+  backdrop-filter: blur(10px); /* Optional: adds a blur effect */
+}
+
 .chatbot {
   position: fixed;
   bottom: 20px;
