@@ -18,13 +18,13 @@ const Chatbot = () => {
         window.location.href = '/properties'; // Redirect to Properties page
         break;
       case 'whatsapp':
-        window.open('https://wa.me/21697800000'); // Open WhatsApp
+        window.open('https://wa.me/1234567890'); // Open WhatsApp
         break;
       case 'email':
-        window.location.href = 'mailto:Ahmedharoun44@gmail.com'; // Open email client
+        window.location.href = 'mailto:info@example.com'; // Open email client
         break;
       case 'location':
-        window.location.href = 'https://maps.app.goo.gl/g189BMj4XZatUZ6v6'; // Redirect to office location
+        window.location.href = '/contact'; // Redirect to Contact page
         break;
       default:
         break;
