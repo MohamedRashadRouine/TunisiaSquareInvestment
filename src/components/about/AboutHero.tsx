@@ -13,13 +13,6 @@ const AboutHero = () => {
       </div>
       <div className="relative z-10 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">À Propos de Nous</h1>
-        <p className="text-xl max-w-2xl mx-auto px-4">
-          Suivez-nous sur les réseaux sociaux :
-          <br />
-          <a href="https://www.facebook.com/TunisiaSquareInvestment" className="text-blue-400">Facebook</a> | 
-          <a href="https://www.instagram.com/cm.square" className="text-blue-400">Instagram</a> | 
-          WhatsApp: +216 97 800 000
-        </p>
       </div>
     </div>
   );

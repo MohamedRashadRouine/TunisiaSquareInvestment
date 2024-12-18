@@ -93,7 +93,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <span className="text-xl mr-2">💬</span>
-                <span>WhatsApp: +216 97 800 000</span>
+                <a href="https://wa.me/+21697800000" className="hover:text-amber-400 transition-colors" target="_blank" rel="noopener noreferrer">+216 97 800 000</a>
               </div>
             </div>
           </div>
