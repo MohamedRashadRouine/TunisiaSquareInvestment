@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
+import { properties } from '../properties';
 
 interface Property {
   id: number;
@@ -12,6 +13,7 @@ interface Property {
   area: string;
   areaValue: number;
   type: string;
+  features: string[];
 }
 
 interface PropertyFilters {
@@ -31,47 +33,7 @@ interface PropertiesContextType {
 const PropertiesContext = createContext<PropertiesContextType | undefined>(undefined);
 
 export const PropertiesProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [properties] = useState<Property[]>([
-    {
-      id: 1,
-      title: 'Villa Moderne à La Marsa',
-      location: 'La Marsa',
-      price: '1,200,000 TND',
-      priceValue: 1200000,
-      image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      beds: 4,
-      baths: 3,
-      area: '250m²',
-      areaValue: 250,
-      type: 'villa',
-    },
-    {
-      id: 2,
-      title: 'Appartement Vue Mer',
-      location: 'Sidi Bou Said',
-      price: '850,000 TND',
-      priceValue: 850000,
-      image: 'https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      beds: 3,
-      baths: 2,
-      area: '180m²',
-      areaValue: 180,
-      type: 'apartment',
-    },
-    {
-      id: 3,
-      title: 'Penthouse de Luxe',
-      location: 'Gammarth',
-      price: '1,500,000 TND',
-      priceValue: 1500000,
-      image: 'https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      beds: 5,
-      baths: 4,
-      area: '300m²',
-      areaValue: 300,
-      type: 'apartment',
-    },
-  ]);
+  const [propertiesState] = useState<Property[]>(properties);
 
   const [filters, setFilters] = useState<PropertyFilters>({
     type: '',
@@ -80,7 +42,7 @@ export const PropertiesProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     minArea: '',
   });
 
-  const filteredProperties = properties.filter(property => {
+  const filteredProperties = propertiesState.filter(property => {
     if (filters.type && property.type !== filters.type) return false;
     if (filters.location && property.location !== filters.location) return false;
     if (filters.maxPrice && property.priceValue > parseInt(filters.maxPrice)) return false;
@@ -91,7 +53,7 @@ export const PropertiesProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   return (
     <PropertiesContext.Provider 
       value={{ 
-        properties, 
+        properties: propertiesState, 
         filters, 
         setFilters, 
         filteredProperties,

@@ -5,6 +5,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Properties from './pages/Properties';
 import Contact from './pages/Contact';
+import PropertyDetails from './components/PropertyDetails';
 import { PropertiesProvider } from './contexts/PropertiesContext';
 
 const AppRoutes: React.FC = () => {
@@ -16,6 +17,11 @@ const AppRoutes: React.FC = () => {
       <Route path="/properties" element={
         <PropertiesProvider>
           <Properties />
+        </PropertiesProvider>
+      } />
+      <Route path="/properties/:id" element={
+        <PropertiesProvider>
+          <PropertyDetails />
         </PropertiesProvider>
       } />
       <Route path="/contact" element={<Contact />} />
