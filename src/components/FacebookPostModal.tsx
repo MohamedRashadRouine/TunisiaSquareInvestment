@@ -1,4 +1,5 @@
 import React from 'react';
+import './FacebookPostModal.css';
 
 interface FacebookPostModalProps {
   isOpen: boolean;
@@ -11,7 +12,7 @@ const FacebookPostModal: React.FC<FacebookPostModalProps> = ({ isOpen, onClose, 
 
   return (
     <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center" onClick={onClose}>
-      <div className="relative max-w-[90vw] max-h-[90vh] bg-white rounded-lg overflow-hidden" onClick={(e) => e.stopPropagation()}> 
+      <div className="relative bg-white rounded-lg overflow-hidden" onClick={(e) => e.stopPropagation()} style={{ width: '500px', height: '700px', maxWidth: '90vw', maxHeight: '90vh' }}>
         <button className="absolute top-0 right-0 m-2 text-white" onClick={onClose}>X</button>
         <iframe 
           src={postUrl} 

@@ -1,0 +1,11 @@
+.facebook-modal {
+    width: 500px; /* Default width for desktop */
+    height: 700px; /* Default height for desktop */
+}
+
+@media (max-width: 768px) {
+    .facebook-modal {
+        width: 300px; /* Width for mobile */
+        height: 500px; /* Height for mobile */
+    }
+}
