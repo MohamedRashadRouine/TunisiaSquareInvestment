@@ -11,12 +11,12 @@ const FacebookPostModal: React.FC<FacebookPostModalProps> = ({ isOpen, onClose, 
 
   return (
     <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center" onClick={onClose}>
-      <div className="relative" onClick={(e) => e.stopPropagation()}> 
+      <div className="relative max-w-[90vw] max-h-[90vh] bg-white rounded-lg overflow-hidden" onClick={(e) => e.stopPropagation()}> 
         <button className="absolute top-0 right-0 m-2 text-white" onClick={onClose}>X</button>
         <iframe 
           src={postUrl} 
-          width="500" 
-          height="750" 
+          width="100%" 
+          height="100%" 
           style={{ border: 'none', overflow: 'hidden' }} 
           scrolling="no" 
           frameBorder="0" 
