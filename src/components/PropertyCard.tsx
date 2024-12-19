@@ -35,7 +35,7 @@ const PropertyCard: React.FC<{ property: Property }> = ({ property }) => {
       <div className="border rounded-lg p-4 flex flex-col">
         <h2 className="text-lg font-bold">{property.title}</h2>
         <p className="text-gray-600">{property.location}</p>
-        <p className="text-xl font-semibold">{property.price} TND</p>
+        <p className="text-xl font-semibold">{property.price} TND</p> 
         <div className="mt-2">
           <h3 className="font-semibold">Spécifications:</h3>
           <ul className="list-disc pl-5">
