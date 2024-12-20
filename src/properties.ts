@@ -6,7 +6,7 @@ export const properties: Property[] = [
         id: 1,
         title: 'Villa de luxe à Chotrana 3',
         location: 'Chotrana 3',
-        price: '1,250,000',
+        price: '3,000,000',
         priceValue: 1250000,
         image: "https://raw.githubusercontent.com/MohamedRashadRouine/TunisiaSquareInvestment/main/src/assets/images/properties/villa-de-luxe-a-chotrana-3/face-view.jpg",
         features: ['S+6', 'Piscine', '700 m²', '835 m² de terrain', 'Chauffage central', 'Climatisation'],
