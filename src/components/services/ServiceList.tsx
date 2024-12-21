@@ -2,19 +2,24 @@ import React from 'react';
 
 const services = [
   {
-    title: 'Investissement Immobilier',
-    description: 'Solutions d\'investissement personnalisées pour maximiser votre rendement',
-    icon: '🏢',
+    title: 'Facility Management Immobilier',
+    description: 'Solutions sur mesure pour la gestion des immeubles administratifs et des usines.',
+    icon: '🏗️',
   },
   {
-    title: 'Conseil Juridique',
-    description: 'Accompagnement légal complet pour vos transactions immobilières',
+    title: 'Conseil Juridique et Publications',
+    description: 'Accompagnement légal complet pour vos transactions immobilières et publication de recueils sur les nouveautés juridiques et fiscales.',
     icon: '⚖️',
   },
   {
-    title: 'Gestion de Patrimoine',
-    description: 'Optimisation et valorisation de votre portefeuille immobilier',
+    title: 'Gestion de Patrimoine et Portefeuille',
+    description: 'Optimisation et valorisation de votre portefeuille immobilier, incluant l’arbitrage entre biens fonciers.',
     icon: '📊',
+  },  
+  {
+    title: 'Investissement Immobilier',
+    description: 'Solutions d\'investissement personnalisées pour maximiser votre rendement',
+    icon: '🏢',
   },
   {
     title: 'Architecture & Design',
@@ -32,6 +37,7 @@ const services = [
     icon: '📄',
   },
 ];
+
 
 const ServiceList = () => {
   return (
