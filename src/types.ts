@@ -10,4 +10,6 @@ export interface Property {
     beds: number;
     baths: number;
     area: number;
+    areaValue: number;
+    type: string; // Added property
 }

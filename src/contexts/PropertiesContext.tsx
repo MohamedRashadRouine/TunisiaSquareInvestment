@@ -10,7 +10,7 @@ interface Property {
   image: string;
   beds: number;
   baths: number;
-  area: string;
+  area: number;
   areaValue: number;
   type: string;
   features: string[];
