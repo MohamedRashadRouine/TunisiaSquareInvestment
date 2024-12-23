@@ -43,6 +43,10 @@ const Footer = () => {
                   Ahmedharoun44@gmail.com
                 </a>
               </div>
+              <div className="flex items-center">
+                <span className="text-xl mr-2">👥</span>
+                <a href="https://www.linkedin.com/company/tunisiasquareinvestment/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">LinkedIn</a>
+              </div>
             </div>
           </div>
 
@@ -94,6 +98,13 @@ const Footer = () => {
               <div className="flex items-center">
                 <span className="text-xl mr-2">💬</span>
                 <a href="https://wa.me/+21697800000" className="hover:text-amber-400 transition-colors" target="_blank" rel="noopener noreferrer">+216 97 800 000</a>
+              </div>
+              <div className="flex items-center">
+                <span className="text-xl mr-2">👥</span>
+                <a href="https://www.linkedin.com/company/tunisiasquareinvestment/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">LinkedIn</a>
+              </div>
+              <div>
+                <p>Follow us on LinkedIn: <a href="https://www.linkedin.com/company/tunisiasquareinvestment/" target="_blank">Tunisia Square Investment</a></p>
               </div>
             </div>
           </div>

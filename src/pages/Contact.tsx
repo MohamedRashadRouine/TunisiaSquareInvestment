@@ -68,6 +68,12 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <footer>
+        <div>
+          <p>Follow us on LinkedIn: <a href="https://www.linkedin.com/company/tunisiasquareinvestment/" target="_blank">Tunisia Square Investment</a></p>
+          <p>Follow us on LinkedIn: <a href="https://www.linkedin.com/company/tunisiasquareinvestment/" target="_blank">Tunisia Square Investment</a></p>
+        </div>
+      </footer>
     </div>
   );
 };
