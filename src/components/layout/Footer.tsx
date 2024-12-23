@@ -43,10 +43,6 @@ const Footer = () => {
                   Ahmedharoun44@gmail.com
                 </a>
               </div>
-              <div className="flex items-center">
-                <span className="text-xl mr-2">👥</span>
-                <a href="https://www.linkedin.com/company/tunisiasquareinvestment/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">LinkedIn</a>
-              </div>
             </div>
           </div>
 
