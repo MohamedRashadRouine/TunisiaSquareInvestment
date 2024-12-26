@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logoSrc from '../../assets/logo.svg';
+import { FaFacebook, FaInstagram, FaWhatsapp, FaLinkedin, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
@@ -15,7 +16,7 @@ const Footer = () => {
             </div>
             <div className="space-y-2">
               <div className="flex items-center">
-                <span className="text-xl mr-2">📍</span>
+                <FaMapMarkerAlt className="text-xl mr-2 text-amber-400" />
                 <a 
                   href="https://maps.app.goo.gl/4stENezyU5nv82L49" 
                   target="_blank" 
@@ -26,7 +27,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center">
-                <span className="text-xl mr-2">📞</span>
+                <FaPhone className="text-xl mr-2 text-amber-400" />
                 <a 
                   href="tel:+21697800000" 
                   className="hover:text-amber-400 transition-colors"
@@ -35,7 +36,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center">
-                <span className="text-xl mr-2">📧</span>
+                <FaEnvelope className="text-xl mr-2 text-amber-400" />
                 <a 
                   href="mailto:Ahmedharoun44@gmail.com" 
                   className="hover:text-amber-400 transition-colors"
@@ -44,28 +45,6 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Liens Rapides</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="hover:text-amber-400">Accueil</Link>
-              </li>
-              <li>
-                <Link to="/about" className="hover:text-amber-400">À Propos</Link>
-              </li>
-              <li>
-                <Link to="/services" className="hover:text-amber-400">Services</Link>
-              </li>
-              <li>
-                <Link to="/properties" className="hover:text-amber-400">Propriétés</Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:text-amber-400">Contact</Link>
-              </li>
-            </ul>
           </div>
 
           {/* Services */}
@@ -82,26 +61,43 @@ const Footer = () => {
           {/* Social Media */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Réseaux Sociaux</h3>
-            <div className="space-y-2">
-              <div className="flex items-center">
-                <span className="text-xl mr-2">📱</span>
-                <a href="https://www.facebook.com/TunisiaSquareInvestment" className="hover:text-amber-400 transition-colors" target="_blank" rel="noopener noreferrer">Facebook</a>
-              </div>
-              <div className="flex items-center">
-                <span className="text-xl mr-2">📸</span>
-                <a href="https://www.instagram.com/cm.square" className="hover:text-amber-400 transition-colors" target="_blank" rel="noopener noreferrer">Instagram</a>
-              </div>
-              <div className="flex items-center">
-                <span className="text-xl mr-2">💬</span>
-                <a href="https://wa.me/+21697800000" className="hover:text-amber-400 transition-colors" target="_blank" rel="noopener noreferrer">+216 97 800 000</a>
-              </div>
-              <div className="flex items-center">
-                <span className="text-xl mr-2">👥</span>
-                <a href="https://www.linkedin.com/company/tunisiasquareinvestment/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">LinkedIn</a>
-              </div>
-              <div>
-                <p>Follow us on LinkedIn: <a href="https://www.linkedin.com/company/tunisiasquareinvestment/" target="_blank">Tunisia Square Investment</a></p>
-              </div>
+            <div className="flex flex-col space-y-4">
+              <a 
+                href="https://www.facebook.com/TunisiaSquareInvestment" 
+                className="flex items-center group" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaFacebook className="text-3xl mr-3 text-[#1877F2] group-hover:scale-110 transition-transform" /> 
+                <span className="group-hover:text-[#1877F2] transition-colors">Facebook</span>
+              </a>
+              <a 
+                href="https://www.instagram.com/cm.square" 
+                className="flex items-center group" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="text-3xl mr-3 text-[#E4405F] group-hover:scale-110 transition-transform" /> 
+                <span className="group-hover:text-[#E4405F] transition-colors">Instagram</span>
+              </a>
+              <a 
+                href="https://wa.me/+21697800000" 
+                className="flex items-center group" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp className="text-3xl mr-3 text-[#25D366] group-hover:scale-110 transition-transform" /> 
+                <span className="group-hover:text-[#25D366] transition-colors">WhatsApp</span>
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/tunisiasquareinvestment/" 
+                className="flex items-center group" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="text-3xl mr-3 text-[#0A66C2] group-hover:scale-110 transition-transform" /> 
+                <span className="group-hover:text-[#0A66C2] transition-colors">LinkedIn</span>
+              </a>
             </div>
           </div>
         </div>

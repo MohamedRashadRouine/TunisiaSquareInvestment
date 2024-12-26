@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactHero from '../components/contact/ContactHero';
+import { FaFacebook, FaInstagram, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -48,6 +49,49 @@ const Contact = () => {
                     Lundi - Vendredi: 9h00 - 18h00<br />
                     Samedi: 9h00 - 13h00
                   </p>
+                </div>
+
+                {/* Social Media Links */}
+                <div className="pt-6">
+                  <h3 className="font-semibold mb-4">Réseaux Sociaux</h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    <a
+                      href="https://www.facebook.com/TunisiaSquareInvestment"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all group"
+                    >
+                      <FaFacebook className="text-4xl text-[#1877F2] group-hover:scale-110 transition-transform" />
+                      <span className="mt-2 text-sm text-gray-600 group-hover:text-[#1877F2] transition-colors">Facebook</span>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/cm.square"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all group"
+                    >
+                      <FaInstagram className="text-4xl text-[#E4405F] group-hover:scale-110 transition-transform" />
+                      <span className="mt-2 text-sm text-gray-600 group-hover:text-[#E4405F] transition-colors">Instagram</span>
+                    </a>
+                    <a
+                      href="https://wa.me/+21697800000"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all group"
+                    >
+                      <FaWhatsapp className="text-4xl text-[#25D366] group-hover:scale-110 transition-transform" />
+                      <span className="mt-2 text-sm text-gray-600 group-hover:text-[#25D366] transition-colors">WhatsApp</span>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/tunisiasquareinvestment/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all group"
+                    >
+                      <FaLinkedin className="text-4xl text-[#0A66C2] group-hover:scale-110 transition-transform" />
+                      <span className="mt-2 text-sm text-gray-600 group-hover:text-[#0A66C2] transition-colors">LinkedIn</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
